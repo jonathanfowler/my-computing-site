@@ -1,0 +1,267 @@
+/* ===========================
+   GLOBAL PAGE LAYOUT
+=========================== */
+
+body {
+  background: #f9fafb;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  color: #111827;
+  margin: 0;
+}
+
+/* Page wrapper */
+.bc-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+/* (optional) Narrow layout for some pages */
+.bc-page--narrow {
+  max-width: 760px;
+}
+
+/* ===========================
+   TOP NAVIGATION
+=========================== */
+
+.bc-nav {
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.bc-nav__inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0.7rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bc-nav__brand {
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #111827;
+}
+
+.bc-nav__brand span {
+  color: #2563eb;
+}
+
+.bc-nav__links {
+  display: flex;
+  gap: 0.9rem;
+  font-size: 0.9rem;
+}
+
+.bc-nav__link {
+  text-decoration: none;
+  color: #4b5563;
+}
+
+.bc-nav__link--active,
+.bc-nav__link:hover {
+  color: #111827;
+  text-decoration: underline;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+.bc-header {
+  margin-bottom: 2rem;
+}
+
+.bc-header__title {
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
+}
+
+.bc-header__subtitle {
+  color: #6b7280;
+  margin-bottom: 0.9rem;
+  max-width: 40rem;
+}
+
+.bc-header__badge {
+  display: inline-block;
+  background: #2563eb;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.4rem;
+  font-size: 0.8rem;
+}
+
+/* ===========================
+   CARDS
+=========================== */
+
+.bc-card {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1.4rem 1.5rem;
+  margin-bottom: 1.4rem;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
+  border: 1px solid #e5e7eb;
+}
+
+.bc-card__title {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+  font-size: 1.25rem;
+}
+
+/* ===========================
+   BUTTONS & LINKS
+=========================== */
+
+.bc-button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.bc-button--secondary {
+  background: #10b981;
+}
+
+.bc-button--small {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+}
+
+.bc-button:hover {
+  background: #1d4ed8;
+}
+
+/* ===========================
+   LISTS
+=========================== */
+
+.bc-activity-list {
+  margin: 0.4rem 0 0.4rem;
+  padding-left: 1.2rem;
+}
+
+.bc-activity-list li {
+  margin-bottom: 0.3rem;
+}
+
+/* ===========================
+   CHIPS (for activities)
+=========================== */
+
+.bc-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.bc-chip {
+  border-radius: 999px;
+  background: #e5e7eb;
+  padding: 0.15rem 0.6rem;
+  font-size: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.bc-chip input {
+  margin: 0;
+}
+
+/* ===========================
+   FORM CONTROLS
+=========================== */
+
+.bc-input,
+.bc-textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 0.4rem 0.55rem;
+  border-radius: 0.5rem;
+  border: 1px solid #d1d5db;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+.bc-textarea {
+  min-height: 3rem;
+  resize: vertical;
+}
+
+/* ===========================
+   RESULT TEXT
+=========================== */
+
+.bc-result {
+  margin-top: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.bc-result--ok {
+  color: #15803d;
+}
+
+.bc-result--bad {
+  color: #b91c1c;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+.bc-footer {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #6b7280;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 1rem;
+}
+/* ===========================
+   GRID LAYOUT (for activities index)
+=========================== */
+
+.bc-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+@media (min-width: 700px) {
+  .bc-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .bc-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Make card-as-link look nice */
+.bc-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.bc-card-link:hover .bc-card {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 1px #2563eb33, 0 4px 8px rgba(15, 23, 42, 0.12);
+}
