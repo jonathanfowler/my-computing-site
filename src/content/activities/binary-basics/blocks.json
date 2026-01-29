@@ -1,0 +1,23 @@
+{
+  "blocks": [
+    {
+      "type": "shortAnswer",
+      "id": "binary-to-denary",
+      "title": "Activity: Convert to denary",
+      "prompt": "Convert this binary number into denary:",
+      "question": "101101",
+      "answer": "45",
+      "feedback": {
+        "empty": "Type a number first.",
+        "good": "Correct! 101101 in binary equals 45 in denary.",
+        "tryAgain": "Not quite. Try again! (Hint: place values are 32, 16, 8, 4, 2, 1)"
+      },
+      "print": {
+        "lines": 3
+      },
+      "printAnswers": {
+        "modelAnswer": "101101 in binary equals 45 in denary."
+      }
+    }
+  ]
+}

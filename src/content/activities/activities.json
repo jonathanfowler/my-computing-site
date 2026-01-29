@@ -1,0 +1,62 @@
+[
+  {
+    "id": "ai-literacy-basics_v1",
+    "slug": "ai-literacy-basics",
+    "title": "AI Literacy Basics",
+    "summary": "Intro to what AI is and where students encounter it.",
+    "tags": ["KS3", "AI", "Digital Literacy"],
+    "lessonCode": "KS3-AI-01",
+    "subTopic": "AI Literacy",
+    "lesson": "Lesson 1"
+  },
+  {
+    "id": "binary-basics_v1",
+    "slug": "binary-basics",
+    "title": "Binary Basics",
+    "summary": "Binary place values and converting binary to denary.",
+    "tags": ["KS3", "Binary", "Data"],
+    "lessonCode": "KS3-DR-01",
+    "subTopic": "Data Representation",
+    "lesson": "Lesson 2"
+  },
+  {
+    "id": "what-is-technology-ks1_v1",
+    "slug": "what-is-technology-ks1",
+    "title": "What Is Technology? A Digital Literacy Foundation Lesson",
+    "summary": "Introduce technology as tools people make to help them in everyday life.",
+    "tags": ["KS1", "Digital Literacy", "Foundations"],
+    "lessonCode": "KS1-DL-01",
+    "subTopic": "Digital Literacy",
+    "lesson": "Lesson 1"
+  },
+  {
+    "id": "what-is-technology-ks3_v1",
+    "slug": "what-is-technology-ks3",
+    "title": "Foundation lesson: defining technology accurately",
+    "summary": "Define technology accurately as human-designed tools and systems that solve problems.",
+    "tags": ["KS3", "Digital Literacy", "Foundations"],
+    "lessonCode": "KS3-DL-01",
+    "subTopic": "Digital Literacy",
+    "lesson": "Lesson 2"
+  },
+  {
+    "id": "digital-vs-non-digital-ks3_v1",
+    "slug": "digital-vs-non-digital-ks3",
+    "title": "Digital vs Non-Digital Technology",
+    "summary": "Distinguish digital from non-digital technology and explain why Computing focuses on digital systems.",
+    "tags": ["KS3", "Digital Literacy", "Foundations"],
+    "lessonCode": "KS3-DL-02",
+    "subTopic": "Digital Literacy",
+    "lesson": "Lesson 3"
+  },
+  {
+    "id": "what-is-a-system-ks3_v1",
+    "slug": "what-is-a-system-ks3",
+    "title": "What Is a System?",
+    "summary": "Understand systems as connected parts with inputs, processes and outputs.",
+    "tags": ["KS3", "Digital Literacy", "Foundations"],
+    "lessonCode": "KS3-DL-03",
+    "subTopic": "Digital Literacy",
+    "lesson": "Lesson 4"
+  }
+]

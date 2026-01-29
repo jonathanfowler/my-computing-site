@@ -1,0 +1,91 @@
+{
+  "blocks": [
+    {
+      "type": "markdown",
+      "id": "everyday-systems-ks3",
+      "content": "### Examples of everyday systems\n\nSystems have connected parts that work together for a purpose. Examples include:"
+    },
+    {
+      "type": "iconGrid",
+      "id": "system-examples-ks3",
+      "title": "Everyday systems",
+      "prompt": "Examples include:",
+      "items": [
+        { "label": "Traffic lights", "icon": "trafficLights" },
+        { "label": "Washing machine", "icon": "washingMachine" },
+        { "label": "School bell", "icon": "bell" },
+        { "label": "Smartphone", "icon": "smartphone" }
+      ]
+    },
+    {
+      "type": "match",
+      "id": "is-it-a-system-ks3",
+      "prompt": "Decide whether each example is a system or not a system.",
+      "options": ["System", "Not a system"],
+      "items": [
+        { "label": "Pencil", "answer": "Not a system", "icon": "pencil" },
+        { "label": "Chair", "answer": "Not a system", "icon": "chair" },
+        { "label": "Traffic lights", "answer": "System", "icon": "trafficLights" },
+        { "label": "Smartphone", "answer": "System", "icon": "smartphone" },
+        { "label": "Tree", "answer": "Not a system", "icon": "tree" },
+        { "label": "Washing machine", "answer": "System", "icon": "washingMachine" }
+      ],
+      "feedback": {
+        "correct": "Good thinking!",
+        "incorrect": "Some choices need another look."
+      },
+      "print": {
+        "columns": ["Item", "System?"]
+      },
+      "printAnswers": {
+        "showCorrect": true
+      }
+    },
+    {
+      "type": "markdown",
+      "id": "systems-and-technology-ks3",
+      "content": "### Systems and technology\n\nNot all technology is a system. A pencil is technology, but not a system on its own. A chair is technology, but not a system.\n\nSystems usually involve multiple components, rules or instructions, and coordination between parts."
+    },
+    {
+      "type": "shortAnswer",
+      "id": "identify-parts-ks3",
+      "prompt": "Choose one system (Smartphone, Washing machine, Traffic lights, or Computer system). Identify its inputs, processing and outputs.",
+      "acceptAny": true,
+      "print": {
+        "lines": 8
+      },
+      "printAnswers": {
+        "modelAnswer": "Example: Traffic lights. Input: timer or button press. Processing: rules decide which light shows. Output: red, amber or green lights."
+      }
+    },
+    {
+      "type": "markdown",
+      "id": "digital-systems-ks3",
+      "content": "### Digital systems\n\nA digital system uses computers, data and instructions (programs). Digital systems are the main focus of Computing because they process data and follow algorithms.\n\nUnderstanding systems helps explain how software and hardware work together, how data flows, and how automation and AI function."
+    },
+    {
+      "type": "shortAnswer",
+      "id": "reflection-system-ks3",
+      "prompt": "Choose one system you use regularly. Explain its purpose, its main parts, and whether it is digital or non-digital.",
+      "acceptAny": true,
+      "print": {
+        "lines": 6
+      },
+      "printAnswers": {
+        "modelAnswer": "Example: A bus ticketing system. Purpose: sell tickets. Parts: card reader, software, ticket machine. It is digital because it uses data and code."
+      }
+    },
+    {
+      "type": "shortAnswer",
+      "id": "extension-system-ks3",
+      "prompt": "Extension: What could go wrong in a system if one part fails? Give one example.",
+      "acceptAny": true,
+      "print": {
+        "lines": 6
+      },
+      "printAnswers": {
+        "modelAnswer": "Example: If traffic light sensors fail, lights might stay red or green too long, causing congestion or accidents."
+      }
+    }
+  ]
+}

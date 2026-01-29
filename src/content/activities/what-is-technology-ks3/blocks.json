@@ -1,0 +1,368 @@
+{
+  "blocks": [
+    {
+      "type": "multiChoiceExplain",
+      "id": "is-it-technology-ks3",
+      "prompt": "Decide whether each of the following is an example of technology.",
+      "items": [
+        {
+          "label": "Smartphone",
+          "correct": true,
+          "explanation": "Designed by humans to perform many tasks.",
+          "icon": "smartphone"
+        },
+        {
+          "label": "Pencil",
+          "correct": true,
+          "explanation": "A tool designed to help people write.",
+          "icon": "pencil"
+        },
+        {
+          "label": "Chair",
+          "correct": true,
+          "explanation": "Designed to support people when sitting.",
+          "icon": "chair"
+        },
+        {
+          "label": "Tree",
+          "correct": false,
+          "explanation": "A natural object, not designed by humans.",
+          "icon": "tree"
+        },
+        {
+          "label": "Washing machine",
+          "correct": true,
+          "explanation": "Uses systems and mechanisms to clean clothes."
+        },
+        {
+          "label": "Road",
+          "correct": true,
+          "explanation": "A human-designed structure to enable transport.",
+          "icon": "road"
+        }
+      ],
+      "print": {
+        "layout": "table",
+        "columns": ["Item", "Technology?", "Reason"],
+        "answerSpace": true
+      },
+      "printAnswers": {
+        "showCorrect": true,
+        "includeExplanations": true
+      }
+    },
+    {
+      "type": "match",
+      "id": "match-tech-purpose-ks3",
+      "prompt": "Match each piece of technology to what it helps people do.",
+      "options": ["Writing", "Sitting", "Learning or watching", "Cutting"],
+      "items": [
+        { "label": "Pencil", "answer": "Writing" },
+        { "label": "Chair", "answer": "Sitting" },
+        { "label": "Tablet", "answer": "Learning or watching" },
+        { "label": "Scissors", "answer": "Cutting" }
+      ],
+      "feedback": {
+        "correct": "Good thinking!",
+        "incorrect": "Some matches need another look."
+      },
+      "print": {
+        "columns": ["Technology", "Used for"]
+      },
+      "printAnswers": {
+        "showCorrect": true
+      }
+    },
+    {
+      "type": "robotChoice",
+      "id": "assistant-writing-ks3",
+      "title": "Help the classroom assistant",
+      "prompt": "The assistant needs to write a message. Which item should it use?",
+      "options": [
+        {
+          "label": "Pencil",
+          "correct": true,
+          "icon": "pencil",
+          "feedback": {
+            "good": "Correct. A pencil is designed for writing."
+          }
+        },
+        {
+          "label": "Chair",
+          "correct": false,
+          "icon": "chair",
+          "feedback": {
+            "tryAgain": "That would not help with writing."
+          }
+        },
+        {
+          "label": "Tree",
+          "correct": false,
+          "icon": "tree",
+          "feedback": {
+            "tryAgain": "That would not help with writing."
+          }
+        }
+      ],
+      "print": {
+        "prompt": "Circle the item that helps with writing."
+      }
+    },
+    {
+      "type": "robotChoice",
+      "id": "assistant-cutting-ks3",
+      "title": "Help the classroom assistant",
+      "prompt": "The assistant needs to cut some paper. Which item should it use?",
+      "options": [
+        {
+          "label": "Scissors",
+          "correct": true,
+          "icon": "scissors",
+          "feedback": {
+            "good": "Correct. Scissors are designed for cutting."
+          }
+        },
+        {
+          "label": "Book",
+          "correct": false,
+          "icon": "book",
+          "feedback": {
+            "tryAgain": "That would not help with cutting."
+          }
+        },
+        {
+          "label": "Crayon",
+          "correct": false,
+          "feedback": {
+            "tryAgain": "That would not help with cutting."
+          }
+        }
+      ],
+      "print": {
+        "prompt": "Circle the item that helps with cutting paper."
+      }
+    },
+    {
+      "type": "robotChoice",
+      "id": "assistant-sitting-ks3",
+      "title": "Help the classroom assistant",
+      "prompt": "The assistant needs to sit down. Which item should it use?",
+      "options": [
+        {
+          "label": "Chair",
+          "correct": true,
+          "icon": "chair",
+          "feedback": {
+            "good": "Correct. A chair is engineered for sitting."
+          }
+        },
+        {
+          "label": "Pencil",
+          "correct": false,
+          "icon": "pencil",
+          "feedback": {
+            "tryAgain": "That would not help with sitting."
+          }
+        },
+        {
+          "label": "Tree",
+          "correct": false,
+          "icon": "tree",
+          "feedback": {
+            "tryAgain": "That would not help with sitting."
+          }
+        }
+      ],
+      "print": {
+        "prompt": "Circle the item that helps with sitting."
+      }
+    },
+    {
+      "type": "robotChoice",
+      "id": "assistant-reading-ks3",
+      "title": "Help the classroom assistant",
+      "prompt": "The assistant needs to read a story. Which item should it use?",
+      "options": [
+        {
+          "label": "Book",
+          "correct": true,
+          "icon": "book",
+          "feedback": {
+            "good": "Correct. A book is designed to store and share text."
+          }
+        },
+        {
+          "label": "Scissors",
+          "correct": false,
+          "icon": "scissors",
+          "feedback": {
+            "tryAgain": "That would not help with reading."
+          }
+        },
+        {
+          "label": "Brick",
+          "correct": false,
+          "icon": "brick",
+          "feedback": {
+            "tryAgain": "That would not help with reading."
+          }
+        }
+      ],
+      "print": {
+        "prompt": "Circle the item that helps with reading."
+      }
+    },
+    {
+      "type": "robotChoice",
+      "id": "assistant-drawing-ks3",
+      "title": "Help the classroom assistant",
+      "prompt": "The assistant needs to draw a picture. Which item should it use?",
+      "options": [
+        {
+          "label": "Pencil",
+          "correct": true,
+          "icon": "pencil",
+          "feedback": {
+            "good": "Correct. A pencil helps with drawing."
+          }
+        },
+        {
+          "label": "Tablet",
+          "correct": true,
+          "icon": "tablet",
+          "feedback": {
+            "good": "Correct. A tablet can also be used to draw."
+          }
+        },
+        {
+          "label": "Chair",
+          "correct": false,
+          "icon": "chair",
+          "feedback": {
+            "tryAgain": "That would not help with drawing."
+          }
+        }
+      ],
+      "print": {
+        "prompt": "Circle the item that helps with drawing."
+      }
+    },
+    {
+      "type": "robotChoice",
+      "id": "assistant-carrying-ks3",
+      "title": "Help the classroom assistant",
+      "prompt": "The assistant needs to carry its things. Which item should it use?",
+      "options": [
+        {
+          "label": "School bag",
+          "correct": true,
+          "icon": "backpack",
+          "feedback": {
+            "good": "Correct. A bag is designed to carry items."
+          }
+        },
+        {
+          "label": "Pencil",
+          "correct": false,
+          "icon": "pencil",
+          "feedback": {
+            "tryAgain": "That would not help with carrying things."
+          }
+        },
+        {
+          "label": "Tree",
+          "correct": false,
+          "icon": "tree",
+          "feedback": {
+            "tryAgain": "That would not help with carrying things."
+          }
+        }
+      ],
+      "print": {
+        "prompt": "Circle the item that helps with carrying things."
+      }
+    },
+    {
+      "type": "robotChoice",
+      "id": "assistant-cleaning-ks3",
+      "title": "Help the classroom assistant",
+      "prompt": "The assistant needs to clean its hands. Which item should it use?",
+      "options": [
+        {
+          "label": "Soap",
+          "correct": true,
+          "icon": "soap",
+          "feedback": {
+            "good": "Correct. Soap is designed to clean."
+          }
+        },
+        {
+          "label": "Book",
+          "correct": false,
+          "icon": "book",
+          "feedback": {
+            "tryAgain": "That would not help with cleaning."
+          }
+        },
+        {
+          "label": "Pencil",
+          "correct": false,
+          "icon": "pencil",
+          "feedback": {
+            "tryAgain": "That would not help with cleaning."
+          }
+        }
+      ],
+      "print": {
+        "prompt": "Circle the item that helps with cleaning hands."
+      }
+    },
+    {
+      "type": "robotChoice",
+      "id": "assistant-speaking-ks3",
+      "title": "Help the classroom assistant",
+      "prompt": "The assistant needs everyone to hear it. Which item should it use?",
+      "options": [
+        {
+          "label": "Microphone",
+          "correct": true,
+          "icon": "microphone",
+          "feedback": {
+            "good": "Correct. A microphone amplifies sound."
+          }
+        },
+        {
+          "label": "Book",
+          "correct": false,
+          "icon": "book",
+          "feedback": {
+            "tryAgain": "That would not help people hear a voice."
+          }
+        },
+        {
+          "label": "Chair",
+          "correct": false,
+          "icon": "chair",
+          "feedback": {
+            "tryAgain": "That would not help people hear a voice."
+          }
+        }
+      ],
+      "print": {
+        "prompt": "Circle the item that helps people hear a voice."
+      }
+    },
+    {
+      "type": "shortAnswer",
+      "id": "technology-purpose-ks3",
+      "prompt": "Choose one piece of technology you use regularly. Explain what problem it solves and how it makes the task easier or more efficient.",
+      "acceptAny": true,
+      "print": {
+        "lines": 8
+      },
+      "printAnswers": {
+        "modelAnswer": "Example: A smartphone helps me communicate quickly by allowing instant messaging and calls without being in the same place."
+      }
+    }
+  ]
+}

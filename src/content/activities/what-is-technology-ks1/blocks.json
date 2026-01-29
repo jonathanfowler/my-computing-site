@@ -1,0 +1,368 @@
+{
+  "blocks": [
+    {
+      "type": "yesNo",
+      "id": "is-it-technology-ks1",
+      "prompt": "Is this technology?",
+      "items": [
+        { "label": "Pencil", "correct": true, "icon": "pencil" },
+        { "label": "Chair", "correct": true, "icon": "chair" },
+        { "label": "Tablet", "correct": true, "icon": "tablet" },
+        { "label": "Book", "correct": true, "icon": "book" },
+        { "label": "Tree", "correct": false, "icon": "tree" },
+        { "label": "Scissors", "correct": true, "icon": "scissors" }
+      ],
+      "feedback": {
+        "correct": "Good thinking!",
+        "incorrect": "Remember: technology is something people make to help them."
+      },
+      "print": {
+        "layout": "table",
+        "columns": ["Item", "Technology?", "Not technology"],
+        "answerSpace": true
+      },
+      "printAnswers": {
+        "showCorrect": true
+      }
+    },
+    {
+      "type": "match",
+      "id": "match-tech-purpose-ks1",
+      "prompt": "Match each piece of technology to what it helps us do.",
+      "options": ["Writing", "Sitting", "Learning or watching", "Cutting"],
+      "items": [
+        { "label": "Pencil", "answer": "Writing" },
+        { "label": "Chair", "answer": "Sitting" },
+        { "label": "Tablet", "answer": "Learning or watching" },
+        { "label": "Scissors", "answer": "Cutting" }
+      ],
+      "feedback": {
+        "correct": "Good thinking!",
+        "incorrect": "Some matches need another look."
+      },
+      "print": {
+        "columns": ["Technology", "Used for"]
+      },
+      "printAnswers": {
+        "showCorrect": true
+      }
+    },
+    {
+      "type": "robotChoice",
+      "id": "robot-writing-ks1",
+      "title": "Help the classroom robot",
+      "prompt": "The robot wants to write a message. Which item should it use?",
+      "options": [
+        {
+          "label": "Pencil",
+          "correct": true,
+          "icon": "pencil",
+          "feedback": {
+            "good": "Yes! A pencil helps us write."
+          }
+        },
+        {
+          "label": "Chair",
+          "correct": false,
+          "icon": "chair",
+          "feedback": {
+            "tryAgain": "That wouldn't help the robot write."
+          }
+        },
+        {
+          "label": "Tree",
+          "correct": false,
+          "icon": "tree",
+          "feedback": {
+            "tryAgain": "That wouldn't help the robot write."
+          }
+        }
+      ],
+      "print": {
+        "prompt": "Circle the item that helps the robot write."
+      }
+    },
+    {
+      "type": "robotChoice",
+      "id": "robot-cutting-ks1",
+      "title": "Help the classroom robot",
+      "prompt": "The robot wants to cut some paper. Which item should it use?",
+      "options": [
+        {
+          "label": "Scissors",
+          "correct": true,
+          "icon": "scissors",
+          "feedback": {
+            "good": "Yes! Scissors help us cut paper."
+          }
+        },
+        {
+          "label": "Book",
+          "correct": false,
+          "icon": "book",
+          "feedback": {
+            "tryAgain": "That wouldn't help the robot cut."
+          }
+        },
+        {
+          "label": "Crayon",
+          "correct": false,
+          "feedback": {
+            "tryAgain": "That wouldn't help the robot cut."
+          }
+        }
+      ],
+      "print": {
+        "prompt": "Circle the item that helps the robot cut paper."
+      }
+    },
+    {
+      "type": "robotChoice",
+      "id": "robot-sitting-ks1",
+      "title": "Help the classroom robot",
+      "prompt": "The robot wants to sit down. Which item should it use?",
+      "options": [
+        {
+          "label": "Chair",
+          "correct": true,
+          "icon": "chair",
+          "feedback": {
+            "good": "Yes! A chair helps us sit."
+          }
+        },
+        {
+          "label": "Pencil",
+          "correct": false,
+          "icon": "pencil",
+          "feedback": {
+            "tryAgain": "That wouldn't help the robot sit."
+          }
+        },
+        {
+          "label": "Tree",
+          "correct": false,
+          "icon": "tree",
+          "feedback": {
+            "tryAgain": "That wouldn't help the robot sit."
+          }
+        }
+      ],
+      "print": {
+        "prompt": "Circle the item that helps the robot sit."
+      }
+    },
+    {
+      "type": "robotChoice",
+      "id": "robot-reading-ks1",
+      "title": "Help the classroom robot",
+      "prompt": "The robot wants to read a story. Which item should it use?",
+      "options": [
+        {
+          "label": "Book",
+          "correct": true,
+          "icon": "book",
+          "feedback": {
+            "good": "Yes! A book helps us read."
+          }
+        },
+        {
+          "label": "Scissors",
+          "correct": false,
+          "icon": "scissors",
+          "feedback": {
+            "tryAgain": "That wouldn't help the robot read."
+          }
+        },
+        {
+          "label": "Brick",
+          "correct": false,
+          "icon": "brick",
+          "feedback": {
+            "tryAgain": "That wouldn't help the robot read."
+          }
+        }
+      ],
+      "print": {
+        "prompt": "Circle the item that helps the robot read."
+      }
+    },
+    {
+      "type": "robotChoice",
+      "id": "robot-drawing-ks1",
+      "title": "Help the classroom robot",
+      "prompt": "The robot wants to draw a picture. Which item should it use?",
+      "options": [
+        {
+          "label": "Pencil",
+          "correct": true,
+          "icon": "pencil",
+          "feedback": {
+            "good": "Yes! A pencil helps us draw."
+          }
+        },
+        {
+          "label": "Tablet",
+          "correct": true,
+          "icon": "tablet",
+          "feedback": {
+            "good": "Yes! A tablet can help us draw too."
+          }
+        },
+        {
+          "label": "Chair",
+          "correct": false,
+          "icon": "chair",
+          "feedback": {
+            "tryAgain": "That wouldn't help the robot draw."
+          }
+        }
+      ],
+      "print": {
+        "prompt": "Circle the item that helps the robot draw."
+      }
+    },
+    {
+      "type": "robotChoice",
+      "id": "robot-carrying-ks1",
+      "title": "Help the classroom robot",
+      "prompt": "The robot wants to carry its things. Which item should it use?",
+      "options": [
+        {
+          "label": "School bag",
+          "correct": true,
+          "icon": "backpack",
+          "feedback": {
+            "good": "Yes! A bag helps us carry things."
+          }
+        },
+        {
+          "label": "Pencil",
+          "correct": false,
+          "icon": "pencil",
+          "feedback": {
+            "tryAgain": "That wouldn't help the robot carry things."
+          }
+        },
+        {
+          "label": "Tree",
+          "correct": false,
+          "icon": "tree",
+          "feedback": {
+            "tryAgain": "That wouldn't help the robot carry things."
+          }
+        }
+      ],
+      "print": {
+        "prompt": "Circle the item that helps the robot carry things."
+      }
+    },
+    {
+      "type": "robotChoice",
+      "id": "robot-cleaning-ks1",
+      "title": "Help the classroom robot",
+      "prompt": "The robot wants to clean its hands. Which item should it use?",
+      "options": [
+        {
+          "label": "Soap",
+          "correct": true,
+          "icon": "soap",
+          "feedback": {
+            "good": "Yes! Soap helps us clean."
+          }
+        },
+        {
+          "label": "Book",
+          "correct": false,
+          "icon": "book",
+          "feedback": {
+            "tryAgain": "That wouldn't help the robot clean hands."
+          }
+        },
+        {
+          "label": "Pencil",
+          "correct": false,
+          "icon": "pencil",
+          "feedback": {
+            "tryAgain": "That wouldn't help the robot clean hands."
+          }
+        }
+      ],
+      "print": {
+        "prompt": "Circle the item that helps the robot clean hands."
+      }
+    },
+    {
+      "type": "robotChoice",
+      "id": "robot-speaking-ks1",
+      "title": "Help the classroom robot",
+      "prompt": "The robot wants everyone to hear it. Which item should it use?",
+      "options": [
+        {
+          "label": "Microphone",
+          "correct": true,
+          "icon": "microphone",
+          "feedback": {
+            "good": "Yes! A microphone helps people hear a voice."
+          }
+        },
+        {
+          "label": "Book",
+          "correct": false,
+          "icon": "book",
+          "feedback": {
+            "tryAgain": "That wouldn't help the robot be heard."
+          }
+        },
+        {
+          "label": "Chair",
+          "correct": false,
+          "icon": "chair",
+          "feedback": {
+            "tryAgain": "That wouldn't help the robot be heard."
+          }
+        }
+      ],
+      "print": {
+        "prompt": "Circle the item that helps the robot be heard."
+      }
+    },
+    {
+      "type": "shortAnswer",
+      "id": "how-tech-helps-ks1",
+      "prompt": "Choose one piece of technology in your classroom. What does it help you do?",
+      "acceptAny": true,
+      "print": {
+        "lines": 4,
+        "includeDrawingBox": true
+      },
+      "printAnswers": {
+        "modelAnswer": "Answers will vary. For example: A pencil helps me write."
+      }
+    },
+    {
+      "type": "shortAnswer",
+      "id": "classroom-walk-ks1",
+      "prompt": "Walk around your classroom. How many pieces of technology can you find? Draw one piece of technology you found.",
+      "acceptAny": true,
+      "print": {
+        "lines": 2,
+        "includeDrawingBox": true
+      },
+      "printAnswers": {
+        "modelAnswer": "Answers will vary."
+      }
+    },
+    {
+      "type": "shortAnswer",
+      "id": "misconception-check-ks1",
+      "prompt": "Is a tree technology? Why not?",
+      "acceptAny": true,
+      "print": {
+        "lines": 3
+      },
+      "printAnswers": {
+        "modelAnswer": "A tree is not technology because it was not made by people."
+      }
+    }
+  ]
+}

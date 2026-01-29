@@ -1,0 +1,23 @@
+{
+  "blocks": [
+    {
+      "type": "multiSelect",
+      "id": "ai-examples",
+      "title": "Activity: Does this use AI?",
+      "prompt": "Tick all the things that you think use AI:",
+      "options": [
+        { "label": "Netflix recommending shows", "correct": true },
+        { "label": "A pencil", "correct": false },
+        { "label": "TikTok 'For You' page", "correct": true },
+        { "label": "Google Maps fastest route", "correct": true },
+        { "label": "A paper notebook", "correct": false },
+        { "label": "Phone spellcheck", "correct": true }
+      ],
+      "feedback": {
+        "empty": "Select the options you think use AI first.",
+        "good": "Great! You picked the AI examples accurately.",
+        "tryAgain": "Some choices could be improved. Discuss as a class or try again."
+      }
+    }
+  ]
+}

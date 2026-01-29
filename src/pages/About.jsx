@@ -17,7 +17,7 @@ function About() {
         <h2 className="bc-card__title">What this site is</h2>
         <p>
           FutureSkills Computing is a work-in-progress collection of interactive
-          activities and printable resources for KS3 & KS4 Computing and
+          activities and printable resources for KS1 to KS4 Computing and
           digital literacy. The emphasis is on clarity, low cognitive load and
           skills that prepare students for the next phase of Computing
           education.
@@ -40,11 +40,14 @@ function About() {
 
       <section className="bc-card">
         <h2 className="bc-card__title">What&apos;s next</h2>
+        <p>The UK Government has committed to broadening GCSE Computer Science into a new GCSE in Computing, reflecting the modern digital landscape. The revised qualification is expected to balance algorithmic thinking with data literacy, digital citizenship and emerging technologies such as AI.
+          The final curriculum is due to be published in 2027, with first teaching from 2028. This creates an opportunity for schools to prepare pupils now by strengthening core computing foundations alongside wider digital capability.</p>
         <p>
           New activities will be added gradually, starting with AI literacy and
           binary, then expanding into topics such as cybersecurity, logic,
           Python basics and digital citizenship.
         </p>
+
         <p>
           Over time, the goal is to offer a coherent set of units that can
           support the evolving Computing curriculum in the UK.

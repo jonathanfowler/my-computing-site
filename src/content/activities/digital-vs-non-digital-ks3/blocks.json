@@ -1,0 +1,153 @@
+{
+  "blocks": [
+    {
+      "type": "markdown",
+      "id": "digital-definition-ks3",
+      "content": "### What is digital technology?\n\nDigital technology:\n\n- uses computers\n- works with data\n- follows instructions (programs or code)\n\nDigital technology processes information using numbers (usually binary)."
+    },
+    {
+      "type": "iconGrid",
+      "id": "digital-tech-examples-ks3",
+      "title": "Digital technology examples",
+      "prompt": "Digital technology processes information using data. Examples include:",
+      "items": [
+        {
+          "label": "Smartphone",
+          "icon": "smartphone",
+          "image": "/images/undraw/mobile-interface_z1b3.svg"
+        },
+        {
+          "label": "Computer",
+          "icon": "computer",
+          "image": "/images/undraw/setup_fzje.svg"
+        },
+        {
+          "label": "Tablet",
+          "icon": "tablet",
+          "image": "/images/undraw/tabs_tlxz.svg"
+        },
+        { "label": "Calculator", "icon": "calculator" },
+        { "label": "Washing machine", "icon": "washingMachine" }
+      ]
+    },
+    {
+      "type": "markdown",
+      "id": "non-digital-definition-ks3",
+      "content": "### What is non-digital technology?\n\nNon-digital technology does not use computers or code. It may be mechanical, structural or manual.\n\nThese are still technology because they were designed to help humans."
+    },
+    {
+      "type": "iconGrid",
+      "id": "non-digital-tech-examples-ks3",
+      "title": "Non-digital technology examples",
+      "prompt": "Non-digital technology does not use computers or code. Examples include:",
+      "items": [
+        { "label": "Pencil", "icon": "pencil" },
+        { "label": "Chair", "icon": "chair" },
+        { "label": "Scissors", "icon": "scissors" },
+        {
+          "label": "Book",
+          "icon": "book",
+          "image": "/images/undraw/books_wxzz.svg"
+        },
+        {
+          "label": "Road",
+          "icon": "road",
+          "image": "/images/undraw/by-the-road_178b.svg"
+        }
+      ]
+    },
+    {
+      "type": "match",
+      "id": "digital-or-not-ks3",
+      "prompt": "Classify each item as digital technology, non-digital technology, or not technology.",
+      "options": ["Digital technology", "Non-digital technology", "Not technology"],
+      "items": [
+        { "label": "Smartphone", "answer": "Digital technology", "icon": "smartphone" },
+        { "label": "Pencil", "answer": "Non-digital technology", "icon": "pencil" },
+        { "label": "Chair", "answer": "Non-digital technology", "icon": "chair" },
+        { "label": "Washing machine", "answer": "Digital technology" },
+        { "label": "Book", "answer": "Non-digital technology", "icon": "book" },
+        { "label": "Traffic lights", "answer": "Digital technology" },
+        { "label": "Tree", "answer": "Not technology", "icon": "tree" }
+      ],
+      "feedback": {
+        "correct": "Good thinking!",
+        "incorrect": "Some classifications need another look."
+      },
+      "print": {
+        "columns": ["Item", "Type"]
+      },
+      "printAnswers": {
+        "showCorrect": true
+      }
+    },
+    {
+      "type": "match",
+      "id": "non-digital-match-ks3",
+      "prompt": "Match each job to a non-digital technology.",
+      "options": ["Pencil", "Abacus", "Washboard", "Book"],
+      "items": [
+        { "label": "Writing", "answer": "Pencil" },
+        { "label": "Calculating", "answer": "Abacus" },
+        { "label": "Cleaning clothes", "answer": "Washboard" },
+        { "label": "Reading", "answer": "Book" }
+      ],
+      "feedback": {
+        "correct": "Good thinking!",
+        "incorrect": "Some matches need another look."
+      },
+      "print": {
+        "columns": ["Job", "Non-digital technology"]
+      },
+      "printAnswers": {
+        "showCorrect": true
+      }
+    },
+    {
+      "type": "match",
+      "id": "digital-match-ks3",
+      "prompt": "Match each job to a digital technology.",
+      "options": ["Word processor", "Calculator", "Washing machine", "E-reader"],
+      "items": [
+        { "label": "Writing", "answer": "Word processor" },
+        { "label": "Calculating", "answer": "Calculator" },
+        { "label": "Cleaning clothes", "answer": "Washing machine" },
+        { "label": "Reading", "answer": "E-reader" }
+      ],
+      "feedback": {
+        "correct": "Good thinking!",
+        "incorrect": "Some matches need another look."
+      },
+      "print": {
+        "columns": ["Job", "Digital technology"]
+      },
+      "printAnswers": {
+        "showCorrect": true
+      }
+    },
+    {
+      "type": "shortAnswer",
+      "id": "reflection-ks3",
+      "prompt": "Choose one piece of technology you use regularly. Is it digital or non-digital? How can you tell, and what problem does it solve?",
+      "acceptAny": true,
+      "print": {
+        "lines": 6
+      },
+      "printAnswers": {
+        "modelAnswer": "Example: A smartphone is digital because it uses software and data. It helps me communicate quickly."
+      }
+    },
+    {
+      "type": "shortAnswer",
+      "id": "extension-ks3",
+      "prompt": "Extension: Should all technology become digital? Give one advantage and one disadvantage.",
+      "acceptAny": true,
+      "print": {
+        "lines": 6
+      },
+      "printAnswers": {
+        "modelAnswer": "Example: Advantage—faster and more flexible. Disadvantage—higher cost or more security risks."
+      }
+    }
+  ]
+}
