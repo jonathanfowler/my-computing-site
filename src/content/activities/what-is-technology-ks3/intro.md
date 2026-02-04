@@ -1,9 +1,12 @@
-## Defining technology
+﻿## Overview
 
-Technology is not just computers, phones or the internet. Technology refers to tools, systems or methods designed by humans to solve problems or make tasks easier or more efficient.
+Technology is something that humans design or create to help solve problems or make tasks easier. Technology can be simple (like a pencil) or complex (like a smartphone). In this activity, you will decide what counts as technology and think about why people use different tools.
 
-A pencil is technology: it was designed to make writing portable and erasable. A chair is technology: it was engineered to support the human body comfortably while sitting. A road is technology: it is a carefully constructed system that makes transportation faster and safer.
+## Your task
 
-Some technology is digital, while other technology is physical or mechanical. A smartphone and a washing machine are both technology, even though one relies on software and the other on gears and motors.
+In this activity, you will:
 
-Understanding what counts as technology helps us think more clearly about how technology affects society and how it should be designed and used responsibly. When we recognize that something as simple as a pencil or as complex as the internet both qualify as technology, we can ask better questions: Who does this help? What problems might it create? How does it change the way we live and work?
+- Decide whether different objects are examples of technology.
+- Match technologies to the jobs they help people do.
+- Choose the best technology for a given situation.
+- Explain how one piece of technology solves a problem.

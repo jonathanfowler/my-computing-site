@@ -52,6 +52,70 @@
       }
     },
     {
+      "type": "multiChoiceExplain",
+      "id": "is-it-technology-ks3-challenge",
+      "prompt": "Technology or not? (Challenge round) Some examples are harder than others. Use the definition of technology to decide.",
+      "items": [
+        {
+          "label": "Fire",
+          "correct": false,
+          "explanation": "A natural phenomenon, not something designed by humans.",
+          "imageKey": "text-only"
+        },
+        {
+          "label": "Wheel",
+          "correct": true,
+          "explanation": "A human-designed tool used to solve transport problems.",
+          "imageKey": "text-only"
+        },
+        {
+          "label": "Electricity",
+          "correct": false,
+          "explanation": "A natural phenomenon that technologies use, but not designed by humans.",
+          "imageKey": "text-only"
+        },
+        {
+          "label": "Book",
+          "correct": true,
+          "explanation": "A human-designed object for storing and sharing information.",
+          "imageKey": "text-only"
+        },
+        {
+          "label": "Map",
+          "correct": true,
+          "explanation": "A human-designed tool for representing places and routes.",
+          "imageKey": "text-only"
+        },
+        {
+          "label": "River",
+          "correct": false,
+          "explanation": "A natural feature, not designed by humans.",
+          "imageKey": "text-only"
+        },
+        {
+          "label": "Glass window",
+          "correct": true,
+          "explanation": "A human-designed material used to solve problems like shelter and light.",
+          "imageKey": "text-only"
+        },
+        {
+          "label": "Stone",
+          "correct": false,
+          "explanation": "A natural object, not designed by humans.",
+          "imageKey": "text-only"
+        }
+      ],
+      "print": {
+        "layout": "table",
+        "columns": ["Item", "Technology?", "Reason"],
+        "answerSpace": true
+      },
+      "printAnswers": {
+        "showCorrect": true,
+        "includeExplanations": true
+      }
+    },
+    {
       "type": "match",
       "id": "match-tech-purpose-ks3",
       "prompt": "Match each piece of technology to what it helps people do.",
@@ -110,40 +174,6 @@
     },
     {
       "type": "robotChoice",
-      "id": "assistant-cutting-ks3",
-      "title": "Help the classroom assistant",
-      "prompt": "The assistant needs to cut some paper. Which item should it use?",
-      "options": [
-        {
-          "label": "Scissors",
-          "correct": true,
-          "icon": "scissors",
-          "feedback": {
-            "good": "Correct. Scissors are designed for cutting."
-          }
-        },
-        {
-          "label": "Book",
-          "correct": false,
-          "icon": "book",
-          "feedback": {
-            "tryAgain": "That would not help with cutting."
-          }
-        },
-        {
-          "label": "Crayon",
-          "correct": false,
-          "feedback": {
-            "tryAgain": "That would not help with cutting."
-          }
-        }
-      ],
-      "print": {
-        "prompt": "Circle the item that helps with cutting paper."
-      }
-    },
-    {
-      "type": "robotChoice",
       "id": "assistant-sitting-ks3",
       "title": "Help the classroom assistant",
       "prompt": "The assistant needs to sit down. Which item should it use?",
@@ -179,41 +209,6 @@
     },
     {
       "type": "robotChoice",
-      "id": "assistant-reading-ks3",
-      "title": "Help the classroom assistant",
-      "prompt": "The assistant needs to read a story. Which item should it use?",
-      "options": [
-        {
-          "label": "Book",
-          "correct": true,
-          "icon": "book",
-          "feedback": {
-            "good": "Correct. A book is designed to store and share text."
-          }
-        },
-        {
-          "label": "Scissors",
-          "correct": false,
-          "icon": "scissors",
-          "feedback": {
-            "tryAgain": "That would not help with reading."
-          }
-        },
-        {
-          "label": "Brick",
-          "correct": false,
-          "icon": "brick",
-          "feedback": {
-            "tryAgain": "That would not help with reading."
-          }
-        }
-      ],
-      "print": {
-        "prompt": "Circle the item that helps with reading."
-      }
-    },
-    {
-      "type": "robotChoice",
       "id": "assistant-drawing-ks3",
       "title": "Help the classroom assistant",
       "prompt": "The assistant needs to draw a picture. Which item should it use?",
@@ -245,41 +240,6 @@
       ],
       "print": {
         "prompt": "Circle the item that helps with drawing."
-      }
-    },
-    {
-      "type": "robotChoice",
-      "id": "assistant-carrying-ks3",
-      "title": "Help the classroom assistant",
-      "prompt": "The assistant needs to carry its things. Which item should it use?",
-      "options": [
-        {
-          "label": "School bag",
-          "correct": true,
-          "icon": "backpack",
-          "feedback": {
-            "good": "Correct. A bag is designed to carry items."
-          }
-        },
-        {
-          "label": "Pencil",
-          "correct": false,
-          "icon": "pencil",
-          "feedback": {
-            "tryAgain": "That would not help with carrying things."
-          }
-        },
-        {
-          "label": "Tree",
-          "correct": false,
-          "icon": "tree",
-          "feedback": {
-            "tryAgain": "That would not help with carrying things."
-          }
-        }
-      ],
-      "print": {
-        "prompt": "Circle the item that helps with carrying things."
       }
     },
     {
@@ -353,15 +313,43 @@
       }
     },
     {
-      "type": "shortAnswer",
-      "id": "technology-purpose-ks3",
-      "prompt": "Choose one piece of technology you use regularly. Explain what problem it solves and how it makes the task easier or more efficient.",
-      "acceptAny": true,
+      "type": "beforeAfter",
+      "id": "before-after-tech-ks3",
+      "title": "Activity: Before and After Technology",
+      "prompt": "Technology often makes tasks easier, faster, or safer. Choose a task and explain how people did it before technology, and how technology helps today.",
+      "tasks": [
+        "Washing clothes",
+        "Travelling long distances",
+        "Cooking food",
+        "Communicating with someone far away",
+        "Finding information",
+        "Lighting a room"
+      ],
+      "beforePrompt": "Before technology, people might have\u2026",
+      "afterPrompt": "Today, technology helps because\u2026",
       "print": {
-        "lines": 8
+        "linesBefore": 5,
+        "linesAfter": 5
       },
       "printAnswers": {
-        "modelAnswer": "Example: A smartphone helps me communicate quickly by allowing instant messaging and calls without being in the same place."
+        "examples": [
+          "Washing clothes — Before: washing by hand in a river or basin. Today: washing machine saves time and effort.",
+          "Communicating far away — Before: letters delivered slowly. Today: phones and messaging are instant.",
+          "Finding information — Before: books or asking experts. Today: search engines provide fast access.",
+          "Travelling long distances — Before: walking or horse and cart. Today: cars, trains and planes are faster and safer."
+        ]
+      }
+    },
+    {
+      "type": "shortAnswer",
+      "id": "key-check-ks3",
+      "prompt": "Does technology always solve problems, or can it sometimes create problems too?",
+      "acceptAny": true,
+      "print": {
+        "lines": 4
+      },
+      "printAnswers": {
+        "modelAnswer": "Example: Technology solves problems but can also create new ones, such as distraction, waste, or privacy issues."
       }
     }
   ]

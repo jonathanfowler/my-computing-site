@@ -1,13 +1,12 @@
-## What is technology?
+﻿## Overview
 
-Technology is something people make to help them do things.
+[Placeholder overview]
 
-Technology is not just computers or phones.
+## Your task
 
-A pencil is technology. It helps us write.
+In this activity, you will:
 
-A chair is technology. It helps us sit comfortably.
+- [Placeholder action]
+- [Placeholder action]
+- [Placeholder action]
 
-A road is technology. It helps people travel.
-
-Some technology is digital, like a smartphone. Some is mechanical, like a washing machine.

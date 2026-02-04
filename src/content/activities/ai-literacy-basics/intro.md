@@ -1,11 +1,13 @@
-## What is AI?
+﻿## Overview
 
-Artificial Intelligence (AI) is when computers or machines do tasks that usually
-need human intelligence, such as recognizing faces, understanding speech,
-spotting patterns, or making predictions.
+Artificial Intelligence (AI) refers to computer systems that can perform tasks which normally require human intelligence, such as recognising images, understanding language, or making decisions based on data.
 
-## Learning goals
+You will explore what AI is, where it is used in everyday life, and how it differs from traditional computer programs.
 
-- Recognize everyday uses of AI.
-- Explain that AI learns from data and patterns.
-- Discuss why AI can be helpful and where it might make mistakes.
+## Your task
+
+In this activity, you will:
+
+- Identify examples of Artificial Intelligence used in everyday technologies.
+- Distinguish between AI systems and non-AI computer programs.
+- Explain, in simple terms, what makes a system an example of AI.

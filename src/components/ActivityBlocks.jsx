@@ -142,7 +142,14 @@ function MultiSelectBlock({ block, includeAnswers, onAttempt }) {
 
         {result && (
           <div className={`bc-result ${result.ok ? "bc-result--ok" : "bc-result--bad"}`}>
-            {result.text}
+            <p>{result.text}</p>
+            {block.printAnswers?.examples?.length ? (
+              <ul className="bc-result__list">
+                {block.printAnswers.examples.map((example) => (
+                  <li key={example}>{example}</li>
+                ))}
+              </ul>
+            ) : null}
           </div>
         )}
       </div>
@@ -220,11 +227,18 @@ function ShortAnswerBlock({ block, includeAnswers, onAttempt }) {
         <button className="bc-button bc-button--small" onClick={checkAnswer}>
           Check answer
         </button>
-        {result && (
-          <div className={`bc-result ${result.ok ? "bc-result--ok" : "bc-result--bad"}`}>
-            {result.text}
-          </div>
-        )}
+          {result && (
+            <div className={`bc-result ${result.ok ? "bc-result--ok" : "bc-result--bad"}`}>
+              <p>{result.text}</p>
+              {block.printAnswers?.examples?.length ? (
+                <ul className="bc-result__list">
+                  {block.printAnswers.examples.map((example) => (
+                    <li key={example}>{example}</li>
+                  ))}
+                </ul>
+              ) : null}
+            </div>
+          )}
       </div>
 
       <div className="bc-print-only">
@@ -239,6 +253,157 @@ function ShortAnswerBlock({ block, includeAnswers, onAttempt }) {
         {includeAnswers && block.printAnswers?.modelAnswer && (
           <p className="bc-print-answer">Model answer: {block.printAnswers.modelAnswer}</p>
         )}
+      </div>
+    </section>
+  );
+}
+
+function BeforeAfterBlock({ block, includeAnswers, onAttempt }) {
+  const [task, setTask] = useState(block.tasks?.[0] || "");
+  const [beforeText, setBeforeText] = useState("");
+  const [afterText, setAfterText] = useState("");
+  const [result, setResult] = useState(null);
+
+  const resetAnswers = () => {
+    setTask(block.tasks?.[0] || "");
+    setBeforeText("");
+    setAfterText("");
+    setResult(null);
+  };
+
+  const checkAnswers = () => {
+    const hasBefore = Boolean(beforeText.trim());
+    const hasAfter = Boolean(afterText.trim());
+
+    if (!hasBefore && !hasAfter) {
+      setResult({ ok: false, text: "Add ideas for both before and today, then check." });
+      return;
+    }
+
+    if (!hasBefore) {
+      setResult({ ok: false, text: "Add a before-technology idea, then check again." });
+      return;
+    }
+
+    if (!hasAfter) {
+      setResult({ ok: false, text: "Add a today-technology idea, then check again." });
+      return;
+    }
+
+    setResult({ ok: true, text: "Good thinking. Your before/after explanation is recorded." });
+
+    if (onAttempt) {
+      onAttempt({
+        blockId: block.id || block.type,
+        blockType: block.type,
+        score: 1,
+        answers: {
+          task,
+          before: beforeText,
+          after: afterText,
+        },
+      });
+    }
+  };
+
+  const printLinesBefore = block.print?.linesBefore || 5;
+  const printLinesAfter = block.print?.linesAfter || 5;
+
+  return (
+    <section className="bc-card bc-block">
+      {block.title && <h2 className="bc-card__title">{block.title}</h2>}
+      {block.prompt && <p>{block.prompt}</p>}
+
+      <div className="bc-interactive">
+        <label className="bc-filter__label" htmlFor={`${block.id}-task`}>
+          Choose one task
+        </label>
+        <select
+          id={`${block.id}-task`}
+          className="bc-input bc-select"
+          value={task}
+          onChange={(event) => setTask(event.target.value)}
+        >
+          {block.tasks?.map((taskOption) => (
+            <option key={taskOption} value={taskOption}>
+              {taskOption}
+            </option>
+          ))}
+        </select>
+
+        <label className="bc-filter__label" htmlFor={`${block.id}-before`}>
+          {block.beforePrompt || "Before technology, people might have\u2026"}
+        </label>
+        <textarea
+          id={`${block.id}-before`}
+          className="bc-textarea"
+          value={beforeText}
+          onChange={(event) => setBeforeText(event.target.value)}
+        />
+
+        <label className="bc-filter__label" htmlFor={`${block.id}-after`}>
+          {block.afterPrompt || "Today, technology helps because\u2026"}
+        </label>
+        <textarea
+          id={`${block.id}-after`}
+          className="bc-textarea"
+          value={afterText}
+          onChange={(event) => setAfterText(event.target.value)}
+        />
+
+        <div style={{ marginTop: "0.6rem" }}>
+          <button className="bc-button bc-button--small" onClick={checkAnswers}>
+            Check answer
+          </button>
+          <button
+            type="button"
+            className="bc-button bc-button--secondary bc-button--small"
+            onClick={resetAnswers}
+            style={{ marginLeft: "0.6rem" }}
+          >
+            Reset
+          </button>
+        </div>
+
+        {result && (
+          <div className={`bc-result ${result.ok ? "bc-result--ok" : "bc-result--bad"}`}>
+            {result.text}
+          </div>
+        )}
+      </div>
+
+      <div className="bc-print-only">
+        <p>Choose one task:</p>
+        <ul className="bc-activity-list">
+          {block.tasks?.map((taskOption) => (
+            <li key={taskOption}>{taskOption}</li>
+          ))}
+        </ul>
+
+        <p>{block.beforePrompt || "Before technology, people might have\u2026"}</p>
+        <div className="bc-print-lines" style={{ "--line-count": printLinesBefore }}>
+          {Array.from({ length: printLinesBefore }).map((_, index) => (
+            <div key={index} className="bc-print-line" />
+          ))}
+        </div>
+
+        <p>{block.afterPrompt || "Today, technology helps because\u2026"}</p>
+        <div className="bc-print-lines" style={{ "--line-count": printLinesAfter }}>
+          {Array.from({ length: printLinesAfter }).map((_, index) => (
+            <div key={index} className="bc-print-line" />
+          ))}
+        </div>
+
+        {includeAnswers && block.printAnswers?.examples?.length ? (
+          <>
+            <p style={{ marginTop: "0.8rem" }}>Example answers:</p>
+            <ul className="bc-activity-list">
+              {block.printAnswers.examples.map((example) => (
+                <li key={example}>{example}</li>
+              ))}
+            </ul>
+          </>
+        ) : null}
       </div>
     </section>
   );
@@ -892,6 +1057,16 @@ function ActivityBlock({ block, includeAnswers, onAttempt }) {
   if (block.type === "shortAnswer") {
     return (
       <ShortAnswerBlock
+        block={block}
+        includeAnswers={includeAnswers}
+        onAttempt={onAttempt}
+      />
+    );
+  }
+
+  if (block.type === "beforeAfter") {
+    return (
+      <BeforeAfterBlock
         block={block}
         includeAnswers={includeAnswers}
         onAttempt={onAttempt}

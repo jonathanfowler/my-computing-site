@@ -11,7 +11,7 @@ function ActivitiesIndex() {
 
   const [searchParams] = useSearchParams();
   const [query, setQuery] = useState("");
-  const [selectedSubTopic, setSelectedSubTopic] = useState("all");
+  const [selectedUnit, setSelectedUnit] = useState("all");
   const [selectedLesson, setSelectedLesson] = useState("all");
 
   useEffect(() => {
@@ -19,9 +19,9 @@ function ActivitiesIndex() {
     setQuery(initialQuery);
   }, [searchParams]);
 
-  const subTopicOptions = useMemo(() => {
+  const unitOptions = useMemo(() => {
     const unique = new Set(
-      activities.map((activity) => activity.subTopic).filter(Boolean)
+      activities.map((activity) => activity.unit).filter(Boolean)
     );
     return ["all", ...Array.from(unique)];
   }, [activities]);
@@ -44,20 +44,21 @@ function ActivitiesIndex() {
           activity.summary,
           activity.subTopic,
           activity.lesson,
+          activity.unit,
           ...(activity.tags || []),
         ]
           .filter(Boolean)
           .some((value) => value.toLowerCase().includes(normalizedQuery));
 
-      const matchesSubTopic =
-        selectedSubTopic === "all" || activity.subTopic === selectedSubTopic;
+      const matchesUnit =
+        selectedUnit === "all" || activity.unit === selectedUnit;
 
       const matchesLesson =
         selectedLesson === "all" || activity.lesson === selectedLesson;
 
-      return matchesQuery && matchesSubTopic && matchesLesson;
+      return matchesQuery && matchesUnit && matchesLesson;
     });
-  }, [activities, query, selectedSubTopic, selectedLesson]);
+  }, [activities, query, selectedUnit, selectedLesson]);
 
   return (
     <main className="bc-page">
@@ -80,24 +81,24 @@ function ActivitiesIndex() {
             id="activity-search"
             className="bc-input"
             type="search"
-            placeholder="Search by sub-topic, lesson, or keyword"
+            placeholder="Search by unit, lesson, or keyword"
             value={query}
             onChange={(event) => setQuery(event.target.value)}
           />
         </div>
         <div className="bc-filter">
-          <label className="bc-filter__label" htmlFor="subtopic-select">
-            Sub-topic
+          <label className="bc-filter__label" htmlFor="unit-select">
+            Unit
           </label>
           <select
-            id="subtopic-select"
+            id="unit-select"
             className="bc-input bc-select"
-            value={selectedSubTopic}
-            onChange={(event) => setSelectedSubTopic(event.target.value)}
+            value={selectedUnit}
+            onChange={(event) => setSelectedUnit(event.target.value)}
           >
-            {subTopicOptions.map((subTopic) => (
-              <option key={subTopic} value={subTopic}>
-                {subTopic === "all" ? "All sub-topics" : subTopic}
+            {unitOptions.map((unit) => (
+              <option key={unit} value={unit}>
+                {unit === "all" ? "All units" : unit}
               </option>
             ))}
           </select>
@@ -140,9 +141,7 @@ function ActivitiesIndex() {
                     {tag}
                   </span>
                 ))}
-                {activity.subTopic && (
-                  <span className="bc-chip">{activity.subTopic}</span>
-                )}
+                {activity.unit && <span className="bc-chip">{activity.unit}</span>}
                 {activity.lesson && (
                   <span className="bc-chip">{activity.lesson}</span>
                 )}

@@ -7,8 +7,19 @@ function ForTeachers() {
       <header className="bc-header">
         <h1 className="bc-header__title">Using These Resources in Class</h1>
         <p className="bc-header__subtitle">
-          A quick guide for Computing teachers on how to use the interactive
-          activities and printable versions.
+          <strong>
+            A practical guide for Computing teachers working with a changing
+            curriculum.
+          </strong>
+        </p>
+        <p className="bc-header__subtitle">
+          UK Computing education is entering a period of transition. Alongside
+          traditional Computer Science topics, there is increasing emphasis on
+          digital literacy, data understanding, AI awareness and safe, ethical
+          use of technology. These resources are designed to support that shift
+          by providing clear, classroom-ready activities that strengthen core
+          Computing foundations without adding unnecessary complexity for
+          teachers.
         </p>
         <span className="bc-header__badge">For teachers</span>
       </header>
@@ -31,13 +42,16 @@ function ForTeachers() {
       <section className="bc-card">
         <h2 className="bc-card__title">Printable / PDF versions</h2>
         <ul className="bc-activity-list">
-          <li>Each activity includes a “Print / Save as PDF” button.</li>
           <li>
-            Use the browser&apos;s Print dialog to create a PDF or paper copies.
+            Each activity includes a <strong>Print / Save as PDF</strong>{" "}
+            option.
           </li>
           <li>
-            Printed versions mirror the on-screen content so you can mix online
-            and offline work.
+            Use the browser&apos;s print dialog to create PDFs or paper copies.
+          </li>
+          <li>
+            Printed versions mirror the on-screen content, allowing you to mix
+            online and offline work within the same lesson.
           </li>
         </ul>
       </section>
@@ -45,13 +59,20 @@ function ForTeachers() {
       <section className="bc-card">
         <h2 className="bc-card__title">Curriculum alignment</h2>
         <p>
-          The focus is on core skills likely to be emphasised in the refreshed
-          Computing curriculum: AI literacy, data, programming fundamentals,
-          digital literacy and safe technology use.
+          The activities focus on core areas likely to be emphasised in the
+          refreshed Computing curriculum, including:
         </p>
+        <ul className="bc-activity-list">
+          <li>AI literacy</li>
+          <li>Data and information</li>
+          <li>Programming fundamentals</li>
+          <li>Digital literacy</li>
+          <li>Safe and responsible technology use</li>
+        </ul>
         <p>
-          You can use the activities as starters, main tasks, retrieval
-          practice, or homework – whatever fits your scheme of work.
+          Activities are designed to slot easily into existing schemes of work
+          and can be used as starters, main tasks, retrieval practice or
+          homework, depending on lesson structure and pupil needs.
         </p>
       </section>
 
@@ -64,3 +85,4 @@ function ForTeachers() {
 }
 
 export default ForTeachers;
+

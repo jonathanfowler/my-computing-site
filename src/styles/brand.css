@@ -379,7 +379,8 @@ body {
   .bc-footer,
   .bc-print-controls,
   .bc-button,
-  .bc-interactive {
+  .bc-interactive,
+  .bc-print-hide {
     display: none !important;
   }
 
@@ -405,6 +406,17 @@ body {
 
 .bc-printmode .bc-print-only {
   display: block;
+}
+
+.bc-teacher-notes summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.15rem;
+  margin-bottom: 0.6rem;
+}
+
+.bc-teacher-notes[open] summary {
+  margin-bottom: 0.8rem;
 }
 
 /* ===========================
@@ -584,9 +596,9 @@ body{
 .bc-page{ max-width: 1020px; margin:0 auto; padding: 2rem 1rem 3rem; }
 .bc-page--narrow{ max-width: 820px; }
 
-.bc-header{ margin: 0 0 1.75rem; }
+.bc-header{ margin: 0 0 1.75rem; padding: 0 1.3rem; }
 .bc-header__title{ margin:0 0 .5rem; font-size:2.25rem; letter-spacing:-0.02em; }
-.bc-header__subtitle{ margin:0 0 1rem; color:var(--muted); max-width: 62ch; }
+.bc-header__subtitle{ margin:0 0 1rem; color:var(--muted); max-width: 100%; }
 .bc-header__badge{
   display:inline-block; padding:.3rem .65rem; border-radius:999px;
   background: color-mix(in srgb, var(--primary) 14%, white);

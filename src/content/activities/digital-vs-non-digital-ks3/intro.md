@@ -1,13 +1,11 @@
-## Digital vs non-digital technology
+﻿## Overview
 
-Technology is anything designed by humans to solve problems or make tasks easier or more efficient. It does not have to be electronic or computer-based.
+[Placeholder overview]
 
-This lesson focuses on **digital technology** and how it differs from **non-digital technology**.
+## Your task
 
-### Important idea: technology changes over time
+In this activity, you will:
 
-Some technologies become digital over time. Older washing machines used mechanical timers; modern ones use microcontrollers and software. The purpose stays the same, but the technology becomes digital.
-
-### Key takeaway
-
-All digital technology is technology, but not all technology is digital.
+- [Placeholder action]
+- [Placeholder action]
+- [Placeholder action]

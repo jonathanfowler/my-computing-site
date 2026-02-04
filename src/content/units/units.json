@@ -1,0 +1,141 @@
+[
+  {
+    "id": "ai-literacy-ks3",
+    "slug": "ai-literacy-ks3",
+    "title": "AI Literacy (KS3)",
+    "keyStage": "KS3",
+    "yearRange": "Year 7-8",
+    "lessonCount": 1,
+    "duration": "1 lesson",
+    "summary": "An introductory unit on what AI is and where students encounter it.",
+    "overview": [
+      "This unit gives pupils a clear, accessible introduction to Artificial Intelligence in everyday contexts. It focuses on understanding what AI is, how it is used, and how to talk about it accurately."
+    ],
+    "learningFocus": [
+      "Recognise common examples of AI in everyday life",
+      "Use accurate language when describing AI",
+      "Begin to consider the benefits and limitations of AI systems"
+    ],
+    "lessons": [
+      {
+        "order": 1,
+        "title": "AI Literacy Introduction",
+        "summary": "Introduction to what AI is and where students encounter it.",
+        "activitySlug": "ai-literacy-basics"
+      }
+    ]
+  },
+  {
+    "id": "data-representation-ks3",
+    "slug": "data-representation-ks3",
+    "title": "Data Representation (KS3)",
+    "keyStage": "KS3",
+    "yearRange": "Year 7-8",
+    "lessonCount": 1,
+    "duration": "1 lesson",
+    "summary": "A first step into how data is represented in digital systems.",
+    "overview": [
+      "This unit introduces pupils to binary representation and builds a foundation for later learning about data and information."
+    ],
+    "learningFocus": [
+      "Understand binary place values",
+      "Convert between binary and denary"
+    ],
+    "lessons": [
+      {
+        "order": 1,
+        "title": "Binary Basics",
+        "summary": "Binary place values and converting binary to denary.",
+        "activitySlug": "binary-basics"
+      }
+    ]
+  },
+  {
+    "id": "digital-literacy-ks1",
+    "slug": "digital-literacy-ks1",
+    "title": "Digital Literacy (KS1)",
+    "keyStage": "KS1",
+    "yearRange": "Year 1-2",
+    "lessonCount": 1,
+    "duration": "1 lesson",
+    "summary": "An early introduction to technology as human-designed tools.",
+    "overview": [
+      "This unit helps pupils understand that technology is created by people to solve problems and help in everyday life."
+    ],
+    "learningFocus": [
+      "Recognise technology in everyday contexts",
+      "Explain technology as tools designed by people"
+    ],
+    "lessons": [
+      {
+        "order": 1,
+        "title": "What is Technology? A Digital Literacy Foundation Lesson",
+        "summary": "Introduce technology as tools people make to help them in everyday life.",
+        "activitySlug": "what-is-technology-ks1"
+      }
+    ]
+  },
+  {
+    "id": "foundations-of-digital-systems-ks3",
+    "slug": "foundations-of-digital-systems-ks3",
+    "title": "Foundations of Digital Systems (KS3)",
+    "keyStage": "KS3",
+    "yearRange": "Year 7-8",
+    "lessonCount": 8,
+    "duration": "8 lessons",
+    "summary": "A foundational unit introducing key digital literacy concepts and systems thinking.",
+    "overview": [
+      "This unit introduces pupils to the core ideas that underpin modern digital literacy. It focuses on defining technology, distinguishing digital systems, and understanding how systems are structured."
+    ],
+    "learningFocus": [
+      "Develop precise language for describing technology and digital systems",
+      "Understand how digital systems differ from non-digital systems",
+      "Apply systems thinking using inputs, processes and outputs"
+    ],
+    "lessons": [
+      {
+        "order": 1,
+        "title": "What is Technology?",
+        "summary": "Introduces technology as human-designed tools and systems.",
+        "activitySlug": "what-is-technology-ks3"
+      },
+      {
+        "order": 2,
+        "title": "Defining Technology Accurately",
+        "summary": "Clarifies common misconceptions and builds precise definitions."
+      },
+      {
+        "order": 3,
+        "title": "Digital vs Non-Digital Technology",
+        "summary": "Explores why Computing focuses on digital systems.",
+        "activitySlug": "digital-vs-non-digital-ks3"
+      },
+      {
+        "order": 4,
+        "title": "What is a System?",
+        "summary": "Introduces inputs, processes and outputs.",
+        "activitySlug": "what-is-a-system-ks3"
+      },
+      {
+        "order": 5,
+        "title": "Inputs, Processes and Outputs",
+        "summary": "Placeholder lesson for expanding systems understanding."
+      },
+      {
+        "order": 6,
+        "title": "Data vs Information",
+        "summary": "Placeholder lesson for distinguishing data from information."
+      },
+      {
+        "order": 7,
+        "title": "Automation and Decision-Making",
+        "summary": "Placeholder lesson on automation and how systems make decisions."
+      },
+      {
+        "order": 8,
+        "title": "Limits of Digital Systems",
+        "summary": "Placeholder lesson on the boundaries and constraints of digital systems."
+      }
+    ]
+  }
+]

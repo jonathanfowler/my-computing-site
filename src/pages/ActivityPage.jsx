@@ -11,6 +11,14 @@ const introModules = import.meta.glob("../content/activities/*/intro.md", {
   import: "default",
 });
 
+const teacherNotesModules = import.meta.glob(
+  "../content/activities/*/teacher-notes.md",
+  {
+    query: "?raw",
+    import: "default",
+  }
+);
+
 const blockModules = import.meta.glob("../content/activities/*/blocks.json", {
   import: "default",
 });
@@ -23,6 +31,7 @@ function ActivityPage() {
   );
 
   const [intro, setIntro] = useState("");
+  const [teacherNotes, setTeacherNotes] = useState("");
   const [blocks, setBlocks] = useState([]);
   const [status, setStatus] = useState("loading");
   const [printMode, setPrintMode] = useState(false);
@@ -51,8 +60,10 @@ function ActivityPage() {
     const loadActivity = async () => {
       if (!slug) return;
       const introKey = `../content/activities/${slug}/intro.md`;
+      const teacherNotesKey = `../content/activities/${slug}/teacher-notes.md`;
       const blocksKey = `../content/activities/${slug}/blocks.json`;
       const loadIntro = introModules[introKey];
+      const loadTeacherNotes = teacherNotesModules[teacherNotesKey];
       const loadBlocks = blockModules[blocksKey];
 
       if (!loadIntro || !loadBlocks) {
@@ -68,6 +79,13 @@ function ActivityPage() {
         ]);
         if (!active) return;
         setIntro(introContent || "");
+        if (loadTeacherNotes) {
+          const notesContent = await loadTeacherNotes();
+          if (!active) return;
+          setTeacherNotes(notesContent || "");
+        } else {
+          setTeacherNotes("");
+        }
         setBlocks(blockContent?.blocks || []);
         setStatus("ready");
       } catch (error) {
@@ -159,6 +177,14 @@ function ActivityPage() {
 
       {status === "ready" && (
         <>
+          {teacherNotes && (
+            <section className="bc-card bc-print-hide">
+              <details className="bc-teacher-notes">
+                <summary>Teacher notes (click to view)</summary>
+                <ReactMarkdown>{teacherNotes}</ReactMarkdown>
+              </details>
+            </section>
+          )}
           {intro && (
             <section className="bc-card">
               <ReactMarkdown>{intro}</ReactMarkdown>

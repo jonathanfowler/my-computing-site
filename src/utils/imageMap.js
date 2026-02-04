@@ -4,6 +4,14 @@ const IMAGE_MAP = {
   // "washing-machine": "/images/objects/washing-machine.png",
   "traffic-lights": "/images/objects/traffic-light-193658_640.jpg",
   "washing-machine": "/images/objects/washing-machine-1786385_640.png",
+  "smartphone": "/images/objects/smartphone.png",
+  "pencil": "/images/objects/pencil.png",
+  "chair": "/images/objects/chair.png",
+  "tree": "/images/objects/tree.png",
+  "road": "/images/objects/road.png",
+  "microphone": "/images/objects/microphone.png",
+  "book": "/images/objects/book.png",
+  "soap": "/images/objects/soap.png",
 };
 
 const normalizeKey = (value) =>

@@ -31,6 +31,15 @@ function NavBar() {
           </NavLink>
 
           <NavLink
+            to="/units"
+            className={({ isActive }) =>
+              "bc-nav__link" + (isActive ? " bc-nav__link--active" : "")
+            }
+          >
+            Units
+          </NavLink>
+
+          <NavLink
             to="/teachers"
             className={({ isActive }) =>
               "bc-nav__link" + (isActive ? " bc-nav__link--active" : "")

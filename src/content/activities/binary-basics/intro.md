@@ -1,13 +1,12 @@
-## Understanding binary
+﻿## Overview
 
-Computers use binary (base-2) because each switch can be on (1) or off (0).
-Binary place values double each time from right to left.
+Binary is a way of representing numbers using only two digits: 0 and 1. Computers use binary to store and process all kinds of information, including numbers, text, images and sound.
 
-## Place values
+## Your task
 
-- 1
-- 2
-- 4
-- 8
-- 16
-- 32
+In this activity, you will:
+
+- Convert binary numbers into denary using place values.
+- Use place value columns to check your working.
+- Explain how binary represents numbers using only 0 and 1.
+
